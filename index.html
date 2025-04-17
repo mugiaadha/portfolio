@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Programmer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background: #f5f7fa;
+        color: #333;
+      }
+      header {
+        background: linear-gradient(120deg, #007cf0, #00dfd8);
+        color: white;
+        padding: 60px 30px;
+        text-align: center;
+      }
+      header h1 {
+        font-size: 2.8em;
+        margin-bottom: 10px;
+      }
+      header p {
+        font-size: 1.2em;
+      }
+      header .profile-photo {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: top; /* Geser isi gambar ke bawah */
+        border-radius: 50%;
+        border: 4px solid white;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+      section {
+        padding: 40px 30px;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      .section-title {
+        font-size: 1.8em;
+        color: #007cf0;
+        margin-bottom: 20px;
+      }
+      .card {
+        background: white;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+      }
+      .tech-stack span {
+        display: inline-block;
+        background: #eef2f7;
+        padding: 5px 10px;
+        margin: 5px;
+        border-radius: 5px;
+        font-size: 0.9em;
+      }
+      .project-links a {
+        margin-right: 10px;
+        color: #007cf0;
+        text-decoration: none;
+      }
+      .project-image {
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-top: 15px;
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        background: #f0f0f0;
+        font-size: 0.9em;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img
+        src="./foto-profile.jpeg"
+        alt="Foto Mugia Adha Kusumah"
+        class="profile-photo"
+      />
+      <h1>Mugia Adha Kusumah</h1>
+      <p>Fullstack Web Developer | Build Things That Work</p>
+    </header>
+
+    <section>
+      <h2 class="section-title">Tentang Saya</h2>
+      <div class="card">
+        <p>
+          Saya adalah seorang fullstack developer dengan pengalaman 8 tahun
+          mengembangkan aplikasi berbasis web untuk kebutuhan klinik, dashboard
+          monitoring. Passion saya adalah membuat sistem yang cepat, efisien,
+          dan user-friendly.
+        </p>
+      </div>
+
+      <h2 class="section-title">Tech Stack</h2>
+      <div class="card tech-stack">
+        <span>Laravel</span>
+        <span>Codeigniter</span>
+        <span>Kotlin (springboot)</span>
+        <span>JavaScript</span>
+        <span>TypeScript</span>
+        <span>PHP</span>
+        <span>Html & Css</span>
+        <span>Bootstrap</span>
+        <span>Angular</span>
+        <span>Vue JS</span>
+        <span>Node.js</span>
+        <span>MySQL</span>
+        <span>Git</span>
+      </div>
+
+      <h2 class="section-title">Proyek Unggulan</h2>
+
+      <div class="card">
+        <h3>Dashboard Dinkes Aceh Besar</h3>
+        <br />
+        <p>
+          Aplikasi monitoring capaian indikator kesehatan tiap puskesmas.
+          Menampilkan chart interaktif dan data setiap cabang puskesmas di aceh
+          barat.
+        </p>
+        <img
+          src="./dashboard-dinkes.png"
+          alt="Dashboard Dinkes Aceh Besar"
+          class="project-image"
+        />
+        <img
+          src="./dashboard-dinkes2.png"
+          alt="Dashboard Dinkes Aceh Besar"
+          class="project-image"
+        />
+
+        <p>
+          Tantangan yang saya hadapi adalah mengkoordinasi beberapa cabang yang
+          memiliki database masing-masing. Setiap cabang memiliki flag untuk
+          data yang spesifik. Saya harus membuat query dinamis yang mengakomodir
+          semua cabang dan bisa digunakan untuk menampilkan data secara
+          fleksibel sesuai flag yang ada.
+        </p>
+
+        <br />
+
+        <p>
+          username : acehbarat <br />
+          password : 12345 <br />
+          kdcabang : 2025
+        </p>
+        <br />
+
+        <p>Teknologi yang digunakan untuk proyek ini:</p>
+        <div class="tech-stack">
+          <span>Backend: Laravel</span>
+          <span>Frontend: Angular</span>
+          <span>Desain: Html & CSS (Bootstrap)</span>
+        </div>
+        <br />
+
+        <div class="project-links">
+          <a
+            href="https://dashboardpkm.clenicapp.com/v1/#/dashboards/dinkes/aceh-barat"
+            >🔗 Demo</a
+          >
+          <a href="#">💻 GitHub (not available)</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Company Profile Dafina Salon</h3>
+        <br />
+        <p>
+          Website ini merupakan company profile Dafina Salon, yang berfokus pada
+          layanan salon muslimah dengan suasana rumah sendiri yang private,
+          namun tetap menerima pelanggan non-muslim. Aplikasi ini memberikan
+          informasi terkait layanan salon, testimoni pelanggan, dan fitur
+          pemesanan online (direct DM ke Whatsapp).
+        </p>
+        <img
+          src="./dafina-salon.png"
+          alt="Dashboard Dinkes Aceh Besar"
+          class="project-image"
+        />
+        <br />
+
+        <p>Teknologi yang digunakan untuk proyek ini:</p>
+        <div class="tech-stack">
+          <span>Frontend: Html & CSS (Bootstrap)</span>
+        </div>
+        <br />
+
+        <div class="project-links">
+          <a href="https://mugiaadha.github.io/dafina-salon/">🔗 Demo</a>
+          <a href="https://github.com/mugiaadha/dafina-salon">💻 GitHub</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Company Profile Nac Tax Center</h3>
+        <br />
+        <p>
+          Website ini merupakan company profile <strong>Nac Tax Center</strong>,
+          yang berfokus pada layanan perpajakan dengan pendekatan profesional
+          dan ramah. Website ini memberikan informasi mengenai layanan pajak
+          yang ditawarkan, testimoni dari klien, serta fitur pemesanan
+          konsultasi secara langsung melalui WhatsApp.
+        </p>
+        <img
+          src="./nac-tax-center.png"
+          alt="Company Profile Nac Tax Center"
+          class="project-image"
+        />
+
+        <br />
+        <br />
+
+        <p>Teknologi yang digunakan untuk proyek ini:</p>
+        <div class="tech-stack">
+          <span>Frontend: HTML & CSS (Bootstrap)</span>
+        </div>
+        <br />
+
+        <div class="project-links">
+          <a href="https://mugiaadha.github.io/nac-tax-center">🔗 Demo</a>
+          <a href="https://github.com/mugiaadha/nac-tax-center">💻 GitHub</a>
+        </div>
+      </div>
+
+      <h2 class="section-title">Kontak</h2>
+      <div class="card">
+        <p>Email: mugiaadha@gmail.com</p>
+        <p>GitHub: <a href="https://github.com/mugiaadha">@mugiaadha</a></p>
+        <p>
+          LinkedIn:
+          <a href="https://www.linkedin.com/in/mugia-adha-kusumah-75537112b/"
+            >https://www.linkedin.com/in/mugia-adha-kusumah-75537112b/</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <footer>&copy; 2025 Mugia Adha Kusumah. Dibuat dengan 💻 dan ☕</footer>
+  </body>
+</html>
