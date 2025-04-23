@@ -70,6 +70,44 @@
       .bold {
         font-weight: bold;
       }
+      .skills-grid-group {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      .skills-card {
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      }
+
+      .skills-card h3 {
+        margin-top: 0;
+        color: #2c3e50;
+      }
+
+      .skills-card ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .skills-card li {
+        margin-bottom: 8px;
+        padding-left: 1em;
+        position: relative;
+      }
+
+      .skills-card li::before {
+        content: "✔";
+        position: absolute;
+        left: 0;
+        color: #2980b9;
+        font-size: 0.9em;
+      }
+
       @media (max-width: 600px) {
         header {
           flex-direction: column;
@@ -200,32 +238,41 @@
 
       <div class="section">
         <h2>Skills</h2>
-        <div class="skills-grid">
-          <!-- Programming Languages -->
-          <div><strong>Languages</strong></div>
-          <div>HTML & CSS</div>
-          <div>JavaScript</div>
-          <div>PHP</div>
-          <div>Java</div>
-          <div>Kotlin</div>
+        <div class="skills-grid-group">
+          <div class="skills-card">
+            <h3>Languages</h3>
+            <ul>
+              <li>HTML & CSS</li>
+              <li>JavaScript</li>
+              <li>PHP</li>
+              <li>Java</li>
+              <li>Kotlin</li>
+            </ul>
+          </div>
 
-          <!-- Frameworks & Libraries -->
-          <div><strong>Frameworks & Libraries</strong></div>
-          <div>Laravel</div>
-          <div>Vue JS</div>
-          <div>Angular</div>
-          <div>jQuery</div>
+          <div class="skills-card">
+            <h3>Frameworks & Libraries</h3>
+            <ul>
+              <li>Laravel</li>
+              <li>Vue JS</li>
+              <li>Angular</li>
+              <li>jQuery</li>
+            </ul>
+          </div>
 
-          <!-- Tools & Technologies -->
-          <div><strong>Tools & Technologies</strong></div>
-          <div>MySQL</div>
-          <div>Git & GitHub</div>
-          <div>CI/CD (GitHub Actions)</div>
-          <div>Linux Server</div>
-          <div>Ubuntu</div>
-          <div>VPS Management</div>
-          <div>Nginx</div>
-          <div>REST API</div>
+          <div class="skills-card">
+            <h3>Tools & Technologies</h3>
+            <ul>
+              <li>MySQL</li>
+              <li>Git & GitHub</li>
+              <li>CI/CD (GitHub Actions)</li>
+              <li>Linux Server</li>
+              <li>Ubuntu</li>
+              <li>VPS Management</li>
+              <li>Nginx</li>
+              <li>REST API</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
